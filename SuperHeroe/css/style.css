@@ -1,0 +1,147 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* ASIDE Y HEADER */
+aside{
+    background-color: #1CD1B0;
+}
+
+h5{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+header{
+    background-color: #00669F;
+    height: 40px;
+    padding-top: 15px;
+}
+
+h3{
+    color: white;
+    font-weight: 400;
+    margin-top:0px;
+    margin-left: 10px;
+}
+
+/* PROPIEDADES CARDS */
+.card_header{
+    height: 150px;
+    width: 285px;
+    border-radius: 20px 20px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 50px;
+
+}
+.fas{
+    color: red;
+    font-size: 25px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 10;
+}
+
+.profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+  
+}
+
+.card_structure{
+    margin-left: 40%;
+}
+.card_body{
+    padding-top: 40px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    background-color: #F3F3F3;
+    height: 305px;
+    width: 285px;   
+    margin-bottom: 90px;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* BOTON VER MAS */
+.boton_ver{
+    background-color: #00669F;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    padding-top: 8px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.textoenlace{
+    text-decoration: none;
+    color: white;
+}
+
+/* IMAGENES ANCLADAS - FONDO Y PROFILE */
+.imagen_fondo1{
+    background-image: url(/img/bg-batman.jpg);
+} 
+
+.imagen_fondo2{
+    background-image: url(/img/bg-wonderw.jpg);
+}
+
+.imagen_fondo3{
+    background-image: url(/img/bg-superman.jpg);
+}
+
+.imagen_profile1{
+    background-image: url(/img/batman.jpg);
+}
+
+.imagen_profile3{
+    background-image: url(/img/superman.jpg); 
+}    
+
+.imagen_profile2{
+    background-image: url(/img/wonderw.jpg);  
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #00669F;
+    font-size: 10px;
+    color: white;
+    font-weight: 200;
+    height: 40px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.icono{
+    width: 70px;
+    height:auto;
+    position: absolute;
+    right: 30px;
+    top: 10px;   
+}
