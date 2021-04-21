@@ -4,6 +4,8 @@
 /* ASIDE Y HEADER */
 aside{
     background-color: #1CD1B0;
+    position: sticky;
+    top: 0;
 }
 
 h5{
