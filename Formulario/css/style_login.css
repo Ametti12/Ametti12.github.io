@@ -1,0 +1,109 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    --main-color: #00669F;
+    --secondary-color: #1CD1B0;
+}
+
+/* ASIDE Y HEADER */
+aside{
+    margin-top: 0px;
+    background-color: var(--secondary-color);
+    /* position: sticky;
+    top: 0; */
+    /* z-index: 30; */
+}
+
+h5{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+h1{
+    color: rgb(49, 49, 49);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header{
+    background-color: var(--main-color);
+    height: 40px;
+    padding-top: 15px;
+}
+.logo{
+    position: relative;
+    top: -65px;
+    left: 10px;
+}
+
+h3{
+    color: white;
+    font-weight: 400;
+    margin-top:0px;
+    margin-left: 90px;
+    font-size: 24px;
+}
+
+main{
+    height: 500px;
+}
+.login{
+    margin-top: 200px;
+    margin-left: 33%;
+    margin-bottom: 200px;   
+    
+}
+
+
+
+input, select{
+    display: block;
+    width: 45%;
+    margin: 12px;
+    height: 30px;
+}
+
+.enviar{
+    margin-top: 30px;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    border: transparent;
+    
+}
+
+
+
+span{
+    color: var(--main-color);
+
+}
+.cuenta{
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 15%;
+    margin-top: 30px;
+
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #00669F;
+    font-size: 10px;
+    color: white;
+    font-weight: 200;
+    height: 40px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
