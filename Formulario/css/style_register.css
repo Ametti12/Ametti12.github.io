@@ -66,7 +66,7 @@ input, .paises{
     border-radius: 30px;
     border: transparent; 
     height: 30px;
-    width: 185px;
+    max-width: 22%;
     
 }
 .reset{
@@ -80,7 +80,8 @@ span{
     color: var(--main-color);
 }
 .cuenta{
-    margin-left: 17%;
+    max-width:50%;
+    text-align: center;
 }
 
 p{
