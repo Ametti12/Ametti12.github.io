@@ -1,0 +1,120 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    --main-color: #00669F;
+    --secondary-color: #1CD1B0;
+}
+
+/* ASIDE Y HEADER */
+aside{
+    margin-top: 0px;
+    background-color: var(--secondary-color);
+    
+    /* z-index: 30; */
+}
+
+h5{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+h1{
+    color: rgb(49, 49, 49);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header{
+    background-color: var(--main-color);
+    height: 40px;
+    padding-top: 15px;
+}
+.logo{
+    position: relative;
+    top: -65px;
+    left: 10px;
+}
+
+h3{
+    color: white;
+    font-weight: 400;
+    margin-top:0px;
+    margin-left: 90px;
+    font-size: 24px;
+}
+
+
+main{
+    margin-top: 100px;
+    margin-bottom: 158px;
+    margin-left: 33%;
+}
+
+input, .paises{
+    display: block;
+    width: 45%;
+    margin: 12px;
+    height: 30px;
+}
+
+.enviar, .reset{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    border: transparent; 
+    height: 30px;
+    max-width: 22%;
+    
+}
+.reset{
+    background-color: gray;
+    color: whitesmoke;  
+}
+
+
+
+.cuenta{
+    margin-left: 17%;
+}
+
+p{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+span{
+    color: var(--main-color);
+
+}
+
+textarea{
+    margin-left: 12px;
+    min-width: 45%;
+    height: 180px;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #00669F;
+    font-size: 10px;
+    color: white;
+    font-weight: 200;
+    height: 40px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+
+a{
+    text-decoration: none;
+}

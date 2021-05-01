@@ -1,0 +1,235 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    --main-color: #00669F;
+    --secondary-color: #1CD1B0;
+}
+
+/* ASIDE */
+aside{
+    margin-top: 0px;
+    background-color: var(--secondary-color);
+    /* position: sticky;
+    top: 0; */
+    /* z-index: 30; */
+}
+
+/* NAV */
+nav{
+    background-color: #001D2D;
+    position: relative;
+    top: -20px;
+    text-align: right;
+}
+nav ul li a{
+    text-decoration: none;
+    color: RGBA(255,255,255,0.9);
+    font-size: 10px;
+    margin:5px;
+}
+li{
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+/* Agregando pseudoelementos a nav*/
+nav ul li a::before{
+    content: "\26A1";
+    display: inline-block;
+    visibility: hidden;
+}
+nav ul li a:hover::before{
+    visibility: visible;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: aqua;
+}
+/* HEADER*/
+h5{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+header{
+    background-color: var(--main-color);
+    height: 40px;
+    padding-top: 15px;
+
+}
+.logo{
+    position: relative;
+    top: -65px;
+    left: 10px;
+}
+
+h3{
+    color: white;
+    font-weight: 400;
+    margin-top:0px;
+    margin-left: 90px;
+    font-size: 24px;
+}
+
+
+/* PROPIEDADES CARDS */
+main{
+    height: 600px;
+
+}
+.card_header{
+    height: 150px;
+    width: 285px;
+    border-radius: 20px 20px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+
+}
+.card_structure .fas{
+    color: red;
+    font-size: 25px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 10;
+}
+
+.profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+
+}
+
+
+.card_body{
+    padding-top: 40px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    background-color: #F3F3F3;
+    height: 305px;
+    width: 285px;
+
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* BOTON VER MAS */
+.boton_ver{
+    background-color: #00669F;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    padding-top: 8px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+}
+.boton_ver:hover{
+    background-color: var(--secondary-color);
+    
+}
+
+.textoenlace{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* IMAGENES ANCLADAS - FONDO Y PROFILE */
+.imagen_fondo1{
+    background-image: url(../img/bg-batman.jpg);
+}
+
+.imagen_fondo2{
+    background-image: url(../img/fondo_harley.png);
+}
+
+.imagen_fondo3{
+    background-image: url(../img/bg-superman.jpg);
+}
+
+.imagen_profile1{
+    background-image: url(../img/batman.jpg);
+}
+
+.imagen_profile3{
+    background-image: url(../img/superman.jpg);
+}
+
+.imagen_profile2{
+    background-image: url(../img/HARLEY.png);
+}
+
+
+article{
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 30px; 
+}
+
+section{
+    text-align: center;
+}
+
+/* .contenedorIcono{
+    display: flex;
+    justify-content: flex-end;
+   
+} */
+.icono{
+    color: var(--main-color);
+    font-size: 60px;
+    position: fixed;
+    right: 5%;
+    top:60%;
+}    
+.icono:hover{
+    color: tomato;
+    
+}
+
+
+/* FOOTER */
+
+footer{
+
+    background-color: #00669F;
+    font-size: 10px;
+    color: white;
+    font-weight: 200;
+    height: 40px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    text-align: center;
+
+    width: 100%;
+}
+
