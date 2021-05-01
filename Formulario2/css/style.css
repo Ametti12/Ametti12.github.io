@@ -194,6 +194,7 @@ section{
     position: fixed;
     right: 8%;
     top:40%;
+    z-index:1000;
 }    
 .icono:hover{
     color: tomato;
