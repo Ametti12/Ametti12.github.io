@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agregaSuper.css">
+    <title>TuSuper</title>
+</head>
+
+<body>
+    <aside>
+
+        <h5>20% de descuentos en todos los productos!</h5>
+    </aside>
+
+    <header>
+        <a href="index.html">
+            <h3>Nombre Tienda</h3>
+        </a>
+        <a href="index.html"><img class="logo" src="./img/OBJECTS.png" alt="Logo_Tienda" height="50px"></a>
+
+    </header>
+    <nav>
+        <ul>
+            <li type="none"><a href="contacto.html">Contacto</a></li>
+            <li type="none"><a href="registro.html">Registrarme</a></li>
+            <li type="none"><a href="login.html">Ingresar</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <section>
+
+            <h1>Añadí tu Super!</h1>
+            <p class="subtitulo">Agregá tu personaje favorito completando las opciones</p>
+
+            <div class="columna1">
+                <form action="">
+
+                    <div>
+                        <label for="nombre"> Nombre </label>
+                        <input type="text" placeholder="Nombre" name="nombre" id="nombre" required minlength="3"
+                            oninvalid="setCustomValidity('Ingrese Usuario correctamente')">
+                    </div>
+                    <div>
+                        <label for="fecha"> Fecha</label>
+                        <input type="date" placeholder="dd/mm/aaaa" name="fecha" id="fecha" required>
+                    </div>
+                    <div>
+                        <textarea name="descripcion" placeholder='Descripcion' id="descripcion"></textarea>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="columna2">
+                <form action="">
+
+                    <div>
+                        <label for="especie"> Especie</label>
+                        <br>
+                        <select id="especie" name="especie" required>
+                            <option selected disabled value=""> Especie </option>
+                            <option value="Cyborg"> Cyborg </option>
+                            <option value="Cósmico"> Cósmico </option>
+                            <option value="Mutante"> Mutante </option>
+                            <option value="Unknown"> Unknown </option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="foto"> Agregar Foto</label><br>
+                        <input type="file" placeholder="Seleccionar un archivo" name="foto" id="foto" required>
+                    </div>
+                    <div>
+                        <div class="poderes">
+                            <p> Poderes</p>
+                            <div>
+                                <input type="checkbox" name="poder1" id="poder1" value="1">
+                                <label for="poder1"> Volar </label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="poder2" id="poder2" value="2">
+                                <label for="poder2"> Superinteligencia </label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="poder3" id="poder3" value="3">
+                                <label for="poder3"> Vista de rayo láser </label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="poder4" id="poder4" value="4">
+                                <label for="poder4"> Billetera gorda</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="personaje">
+                        <p> Tipo de personaje</p>
+                        <div>
+                            <input type="radio" name="personaje" id="tipo1" value="1">
+                            <label for="tipo1"> Héroe / Heroína </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="personaje" id="tipo2" value="2">
+                            <label for="tipo2"> Villano / Villana </label>
+                        </div>
+
+                    </div>
+
+                    
+
+
+
+                </form>
+
+
+            </div>
+
+            <div class="boton">
+                <input type="submit" value="Añadir">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+
+
+
+</body>
+
+</html>
