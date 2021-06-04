@@ -1,0 +1,222 @@
+/* Generales */
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* body{
+    position:fixed;
+} */
+
+.grid-container{
+    display: grid;
+    background-color: rgba(179, 179, 179, 0.1);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.8fr 1fr 2fr 7fr 1fr 0.5fr;
+    gap: 30px 10px;
+    grid-template-areas:
+    "header header header header header header header header header header header header"
+    ". history history history history history history . sugerencias sugerencias sugerencias . "
+    ". post post post post post post . sugerencias sugerencias sugerencias ."
+    ". post post post post post post . . . . . "
+    ". . . . . . . . . . . ."
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
+    ;
+}
+/* HEADER */
+.header{
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgb(202, 202, 202) 1.5px;
+}
+h1{
+    font-weight: 100;
+    margin-left: 8%;
+}
+.header>div>img{
+    border-radius: 50%;
+}
+
+input{
+    width:400px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: rgba(179, 179, 179, 0.1);
+    border: solid  rgb(219, 219, 219) 0.5px;
+}
+/* HISTORY */
+.history{
+    background-color: white;
+    grid-area: history;
+    border-radius: 4px;
+    border: solid  rgb(219, 219, 219) 0.1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.history>img{
+    border-radius: 50%;
+    height: 45px;
+}
+
+/* SUGERENCIAS */
+.sugerencias{
+    grid-area: sugerencias;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.sug1, .sug2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logosug1, .logosug2{
+    display: flex;
+}
+
+.logosug1 img, .logosug2 img{
+    margin-right: 15px;
+    border-radius: 50%;
+    height: 50px;
+}
+.logosug1 h5, p{
+    margin: 0px;
+}
+.cambiar, .sug2>p{
+    color: rgb(0, 119, 255);
+    font-size: 12px;
+}
+.sug1{
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+.sug1 div>p{
+    color: grey;
+    font-size: 12px;
+}
+.textoSug{
+    color: grey;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+/* - - - - - POST - - - - - -*/
+
+.post{
+    background-color: white;
+    border-radius: 4px;
+    border: solid  rgb(219, 219, 219) 0.1px;
+    grid-area: post;
+    display: flex;
+    flex-direction: column;
+}
+
+.logopost{
+    display: flex;
+    align-items: center;
+}
+.logopost>img{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.logopost{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* header post */
+.header-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgb(202, 202, 202) 1.5px;
+}
+
+.header-post p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: grey;
+    margin-right: 20px;
+}
+
+
+.imagenpost{
+    width: 90%;
+}
+
+.container-imagen{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* footer post */
+.iconos{
+    margin: 20px 0px;
+    display: flex;
+    gap: 10px;
+}
+.verMas{
+    color: grey;
+}
+.footer-post{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+span{
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    grid-area: footer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    color: rgb(201, 201, 201);
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header form{
+        display: none;
+    }
+    .grid-container{
+        
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 0.8fr 1fr 9fr 3fr 1fr 0.5fr;
+        gap: 5px 0px;
+        
+        grid-template-areas:
+        "header header header header header header"
+        ". history history history history ."
+        ". post post post post ."
+        ". . sugerencias sugerencias . ."
+        ". . . . . ."
+        "footer footer footer footer footer footer"
+        ;
+    }
+
+    .sugerencias{
+        visibility: hidden;
+    }
+
+}
+
+/* @media screen and (max-width: 430px) {  
+  
+
+} */
